@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('imej/wallpaper.jpeg') no-repeat center center fixed; /* Gantikan 'path/to/your/image.jpg' dengan URL gambar anda */
+            background-size: cover; /* Pilihan lain: contain */
+            color: #333;
+        }
+
+        /* Page Header */
+        .page-header {
+            background: rgba(255, 179, 179, 0.9); /* Background dengan sedikit kelegapan */
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: #a64dff;
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        /* Header and Navigation */
+        header {
+            background: rgba(255, 179, 179, 0.9); /* Background dengan sedikit kelegapan */
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 8px 15px;
+            background: rgba(227, 179, 255, 0.9); /* Background dengan sedikit kelegapan */
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: rgba(209, 159, 232, 0.9);
+        }
+
+        /* Main Content */
+        main {
+            padding: 50px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .section {
+            background: rgba(255, 235, 235, 0.9); /* Background dengan sedikit kelegapan */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            flex: 1 1 45%;
+            min-width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section h1 {
+            text-align: center;
+            color: #a64dff;
+            font-size: 2.5em;
+        }
+
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .section ul li {
+            background: rgba(255, 204, 230, 0.9); /* Background dengan sedikit kelegapan */
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .section ul li:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 179, 179, 0.9); /* Background dengan sedikit kelegapan */
+        }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .nav-buttons button {
+            background: rgba(227, 179, 255, 0.9); /* Background dengan sedikit kelegapan */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .nav-buttons button:hover {
+            background: rgba(209, 159, 232, 0.9);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 179, 179, 0.9); /* Background dengan sedikit kelegapan */
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page Header with "Education" -->
+    <div class="page-header">
+        <h1>Education</h1>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="section education">
+                <h1>Education</h1>
+                <ul>
+                    <li><strong>Diploma:</strong> Diploma Pengurusan Maklumat, UiTM Kedah</li>
+                    <li><strong>Sekolah Menengah:</strong> Sekolah Menengah Agama Daerah Batang Padang</li>
+                </ul>
+            </section>
+
+            <section class="section additional-info">
+                <h1>Additional Information</h1>
+                <ul>
+                    <li><strong>Skills:</strong> Web Development, Graphic Design, Data Analysis</li>
+                    <li><strong>Certifications:</strong> Certified Web Developer, Adobe Photoshop Expert</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="nav-buttons">
+    <button onclick="window.location.href='biodata.html'">Previous</button>
+    <button onclick="window.location.href='experience.html'">Next</button>
+</div>
+
+    </main>
+
+    <footer>
+        <p>© 2024 Ira's Website. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function prevPage() {
+            // Tambahkan logik untuk pergi ke halaman sebelumnya
+            alert('Previous button clicked');
+        }
+
+        function nextPage() {
+            // Tambahkan logik untuk pergi ke halaman seterusnya
+            alert('Next button clicked');
+        }
+    </script>
+</body>
+</html>
+

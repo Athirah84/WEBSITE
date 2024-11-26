@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('imej/wallpaper.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(255, 179, 179, 0.8);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 8px 15px;
+            background: rgba(227, 179, 255, 0.8);
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: rgba(209, 159, 232, 0.8);
+        }
+
+        .family-header {
+            text-align: center;
+            padding: 3rem 1rem;
+            background-color: rgba(255, 235, 235, 0.8);
+            margin: 1rem auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .family-header h1 {
+            color: #9b58b5;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .family-header p {
+            color: #7c4d8b;
+            font-size: 1.2rem;
+        }
+
+        .family-photo {
+            text-align: center;
+            margin: 2rem auto;
+            max-width: 900px;
+        }
+
+        .family-photo img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .family-members {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 2rem;
+        }
+
+        .family-member {
+            background-color: rgba(255, 235, 235, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .family-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .family-member h2 {
+            color: #9b58b5;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .family-member p {
+            color: #7c4d8b;
+            font-size: 1.1rem;
+        }
+
+        .timeline {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #fce4ec;
+            margin: 1rem auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .timeline h2 {
+            color: #9b58b5;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .timeline ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .timeline li {
+            background: rgba(227, 179, 255, 0.8);
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            color: #7c4d8b;
+            font-size: 1.1rem;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .nav-buttons button {
+            background: rgba(227, 179, 255, 0.9); /* Background dengan sedikit kelegapan */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .nav-buttons button:hover {
+            background: rgba(209, 159, 232, 0.9);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 179, 179, 0.8);
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="family-header">
+        <h1>Meet My Wonderful Family</h1>
+        <p>Family is everything to me. They are my support, my love, and my foundation. I am grateful every day for the amazing people in my life.</p>
+    </section>
+
+    <section class="family-photo">
+        <img src="imej/family.jpg" alt="Family Group Photo">
+    </section>
+
+    <section class="family-members">
+        <div class="family-member">
+            <img src="imej/mummy.jpg" alt="Family Member 1">
+            <h2>Mom</h2>
+            <p>Her name is Mazura binti Mat Saat. The heart and soul of our family, always making sure we are loved and cared for.</p>
+        </div>
+        <div class="family-member">
+            <img src="imej/abah.jpg" alt="Family Member 2">
+            <h2>Dad</h2>
+            <p>His name is Abdul Ghani bin Mohd Isa. The rock of our family, always there to provide wisdom, guidance, and support.</p>
+        </div>
+        <div class="family-member">
+            <img src="imej/kakak.jpg" alt="Family Member 3">
+            <h2>Sister</h2>
+            <p>My Lovely sister name Nur Hanisah. My partner-in-crime, always bringing laughter and adventure into our lives.</p>
+        </div>
+        <div class="family-member">
+            <img src="imej/harith.jpg" alt="Family Member 4">
+            <h2>Brother</h2>
+            <p>His name is Muhammad Harith. A fun-loving and creative soul who always keeps things exciting.</p>
+        </div>
+        <div class="family-member">
+            <img src="imej/amir.jpg" alt="Family Member 5">
+            <h2>Brother</h2>
+            <p>Amir Hamizan Which is my best friend, someone I can count on for advice and support through anything.</p>
+        </div>
+        <div class="family-member">
+            <img src="imej/me.jpg" alt="Family Member 6">
+            <h2>Sister 2</h2>
+            <p>Our little sunshine, always lighting up the room with her infectious smile.</p>
+        </div>
+    </section>
+
+    <section class="timeline">
+        <h2>Our Family Timeline</h2>
+        <ul>
+            <li><strong>2005:</strong> We moved to our current home and began a new chapter as a family.</li>
+            <li><strong>2010:</strong> We went on our first family vacation to the beach.</li>
+            <li><strong>2015:</strong> Celebrated our 10th family reunion with cousins from all over the world.</li>
+            <li><strong>2020:</strong> The family grew with the addition of a new member.</li>
+            <li><strong>2024:</strong> Celebrating family milestones and achievements together.</li>
+        </ul>
+    </section>
+
+    <div class="nav-buttons">
+    <button onclick="window.location.href='experience.html'">Previous</button>
+    <button onclick="window.location.href='gallery.html'">Next</button>
+</div>
+
+
+    <footer>
+        <p>© 2024 Athirah's Website. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function prevPage() {
+            // Logic for the previous page
+            alert('Previous button clicked');
+        }
+
+        function nextPage() {
+            // Logic for the next page
+            alert('Next button clicked');
+        }
+    </script>
+</body>
+</html>

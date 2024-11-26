@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('imej/wallpaper.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        /* WELCOME title section */
+        .welcome-section {
+            background-color: #ffb3b3;
+            color: #9c5ec6;
+            text-align: center;
+            padding: 50px 0;
+            margin-bottom: 20px;
+        }
+
+        .welcome-section h1 {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 0;
+            color: #9c5ec6;
+        }
+
+        header {
+            background-color: #ffb3b3;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 8px 15px;
+            background: #e3b3ff;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #d19fe8;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: rgba(255, 235, 235, 0.8);
+            margin: 1rem auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .intro img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-media {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #fce4ec;
+            margin: 1rem auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .social-media ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-media ul li {
+            margin: 0 1rem;
+        }
+
+        .social-media ul li a {
+            text-decoration: none;
+            color: #d147a3;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-media ul li a:hover {
+            color: #a3007e;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 0 1rem;
+        }
+
+        .nav-buttons button {
+            background: #e3b3ff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .nav-buttons button:hover {
+            background: #d19fe8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ffb3b3;
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- WELCOME Title Section -->
+    <div class="welcome-section">
+        <h1>WELCOME TO MY PERSONAL WEBSITE</h1>
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <img src="imej/profileira.jpg" border="5" alt="Ira's photo">
+        <h1>Welcome to My Personal Website</h1>
+        <p>Hi, I am Ira, and this is my personal space on the web where I share about myself, my experiences, and my journey.</p>
+    </section>
+
+    <section class="social-media">
+        <h2>Connect with Me</h2>
+        <ul>
+            <li><a href="https://www.instagram.com/altruisl0ve" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com/username" target="_blank">Facebook</a></li>
+            <li><a href="https://www.linkedin.com/in/username" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
+
+    <div class="nav-buttons">
+    <button onclick="window.location.href='biodata.html'">Next</button>
+</div>
+
+
+    <footer>
+        <p>© 2024 Athirah's Website. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function prevPage() {
+            alert('Previous button clicked');
+        }
+
+        function nextPage() {
+            alert('Next button clicked');
+        }
+    </script>
+</body>
+</html>
+

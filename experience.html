@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('imej/wallpaper.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffb3b3;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 8px 15px;
+            background: #e3b3ff;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #d19fe8;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: rgba(255, 235, 235, 0.8);
+            margin: 1rem auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .intro img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .table-section {
+            text-align: center;
+            margin: 2rem auto;
+            padding: 1rem;
+            max-width: 800px;
+            background-color: #fce4ec;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .table-section table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        .table-section th, .table-section td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .table-section th {
+            background-color: #d19fe8;
+            color: white;
+        }
+
+        .list-section {
+            margin: 2rem auto;
+            padding: 1rem;
+            max-width: 800px;
+            background-color: #ffe3e3;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .list-section h2 {
+            color: #d147a3;
+            margin-bottom: 15px;
+        }
+
+        .list-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #7c4d8b;
+        }
+
+        .list-section ul li {
+            margin: 8px 0;
+        }
+		
+		/* Navigation Buttons */
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .nav-buttons button {
+            background: rgba(227, 179, 255, 0.9); /* Background dengan sedikit kelegapan */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .nav-buttons button:hover {
+            background: rgba(209, 159, 232, 0.9);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ffb3b3;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <img src="imej/profileira.jpg" alt="Ira's photo">
+        <h1>Welcome to My Personal Website</h1>
+        <p>Hi, I am Ira, and this is my personal space on the web where I share about myself, my experiences, and my journey.</p>
+    </section>
+
+    <section class="table-section">
+        <h2>My Achievements</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Achievement</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2020</td>
+                    <td>Dean's List</td>
+                    <td>Awarded for outstanding academic performance.</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>Volunteer Award</td>
+                    <td>Recognized for contributing 100+ hours to community service.</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>Best Project</td>
+                    <td>Received for leading a successful group project in software development.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="list-section">
+        <h2>My Favorite Books</h2>
+        <ul>
+            <li>*The Alchemist* by Paulo Coelho</li>
+            <li>*Atomic Habits* by James Clear</li>
+            <li>*Becoming* by Michelle Obama</li>
+            <li>*To Kill a Mockingbird* by Harper Lee</li>
+            <li>*The Great Gatsby* by F. Scott Fitzgerald</li>
+        </ul>
+    </section>
+<div class="nav-buttons">
+    <button onclick="window.location.href='education.html'">Previous</button>
+    <button onclick="window.location.href='family.html'">Next</button>
+</div>
+
+    <footer>
+        <p>© 2024 Athirah's Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
